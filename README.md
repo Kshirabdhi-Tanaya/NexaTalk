@@ -80,6 +80,16 @@ PORT=5001
 - Improved UI animations
 - Deployment and live hosting
 
+📸 Screenshots
+
+Main Interface
+
+![Main UI](screenshots/home.png)
+
+Chat Interface
+
+![Chat UI](screenshots/chat.png)
+
 👩‍💻 Author
 
 Kshirabdhi Tanaya Sahoo
