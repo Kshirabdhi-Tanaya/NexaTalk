@@ -15,9 +15,9 @@ function Sidebar() {
         setPrevChats
     } = useContext(MyContext);
 
-    // ===============================
+    
     // Fetch All Threads
-    // ===============================
+    
     const getAllThreads = async () => {
         try {
             const response = await fetch("http://localhost:5001/api/thread");
@@ -39,9 +39,9 @@ function Sidebar() {
         getAllThreads();
     }, [currThreadId]);
 
-    // ===============================
+    
     // Create New Chat
-    // ===============================
+    
     const createNewChat = () => {
         setNewChat(true);
         setPrompt("");
@@ -50,9 +50,9 @@ function Sidebar() {
         setPrevChats([]);
     };
 
-    // ===============================
+    
     // Change Thread
-    // ===============================
+    
     const changeThread = async (newThreadId) => {
         setCurrThreadId(newThreadId);
 
@@ -72,9 +72,9 @@ function Sidebar() {
         }
     };
 
-    // ===============================
+    
     // Delete Thread
-    // ===============================
+    
     const deleteThread = async (threadId) => {
         try {
             const response = await fetch(
@@ -98,9 +98,9 @@ function Sidebar() {
         }
     };
 
-    // ===============================
+    
     // JSX
-    // ===============================
+    
     return (
         <section className="sidebar">
 
@@ -127,7 +127,7 @@ function Sidebar() {
                             className="fa-solid fa-trash"
                             style={{ marginLeft: "10px", cursor: "pointer" }}
                             onClick={(e) => {
-                                e.stopPropagation(); // prevent changing thread
+                                e.stopPropagation(); 
                                 deleteThread(thread.threadId);
                             }}
                         ></i>

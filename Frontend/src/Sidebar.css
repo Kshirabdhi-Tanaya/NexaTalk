@@ -5,8 +5,6 @@
     width:320px;
     display:flex;
     flex-direction: column;
-    /* justify-content: space-between;
-    overflow-y: auto; */
 }
 
 button{
@@ -42,7 +40,7 @@ button:hover{
     padding:10px;
     flex: 1;              
     overflow-y: auto;
-    /* height:100%; */
+    
 }
 
 .history li{
@@ -68,13 +66,13 @@ button:hover{
     border-top: solid 0.25px rgba(255,255,255,0.5);
     flex-shrink: 0;
 }
-/* Chrome, Edge, Safari */
+
 .history::-webkit-scrollbar {
     width: 8px;
 }
 
 .history::-webkit-scrollbar-thumb {
-    background: #555;   /* gray */
+    background: #555;   
     border-radius: 8px;
 }
 
@@ -82,7 +80,6 @@ button:hover{
     background: #171717;
 }
 
-/* Firefox */
 .history {
     scrollbar-width: thin;
     scrollbar-color: #555 #171717;
