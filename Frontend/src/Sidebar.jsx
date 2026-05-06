@@ -127,7 +127,7 @@ function Sidebar() {
                             className="fa-solid fa-trash"
                             style={{ marginLeft: "10px", cursor: "pointer" }}
                             onClick={(e) => {
-                                e.stopPropagation(); 
+                                e.stopPropagation();
                                 deleteThread(thread.threadId);
                             }}
                         ></i>
